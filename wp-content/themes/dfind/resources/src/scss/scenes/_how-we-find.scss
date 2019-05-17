@@ -1,0 +1,124 @@
+.how-we-find-section {
+  padding: 140px 0 43px;
+  position: relative;
+  background-color: #F5F6FB;
+
+  .section-content {
+    position: relative;
+    z-index: 1;
+  }
+
+  .section-title {
+    font-style: normal;
+    font-weight: bold;
+    line-height: 56px;
+    font-size: 48px;
+    text-align: center;
+    color: #131436;
+    margin: 0 0 60px;
+  }
+
+  .section-subtitle {
+    font-style: normal;
+    font-weight: 300;
+    line-height: 46px;
+    font-size: 34px;
+    text-align: center;
+    color: #174D79;
+    max-width: 1000px;
+    margin: 0 auto 10px;
+  }
+
+  .section-description {
+    font-family: Roboto, sans-serif;
+    font-style: normal;
+    font-weight: normal;
+    line-height: 26px;
+    font-size: 18px;
+    text-align: center;
+    max-width: 695px;
+    margin: 0 auto 10px;
+    color: #131436;
+  }
+
+  .how-we-find-waves {
+    height: 420px;
+    background: #fff;
+    position: absolute;
+    top: 500px;
+    left: 0;
+    width: 100%;
+
+    .bgTop {
+      z-index: 0;
+    }
+  }
+
+  .wave-animation {
+    position: absolute;
+    top: 450px;
+    left: 0;
+    width: 100%;
+
+    &.rotate {
+      top: 650px;
+    }
+  }
+
+  .image-wrapper {
+    position: relative;
+    padding: 100px 0 40px;
+
+    img {
+      max-width: 100%;
+      margin-left: 65px;
+    }
+    
+    .mobile-image {
+      display: none;
+    }
+  }
+
+  @media (max-width: 992px) {
+    .image-wrapper {
+
+      img {
+        margin-left: 0;
+      }
+    }
+  }
+
+  @include mobile {
+    padding: 54px 0 43px;
+
+    .section-title {
+      line-height: 39px;
+      font-size: 34px;
+      margin: 0 0 22px;
+    }
+
+    .section-subtitle {
+      line-height: normal;
+      font-size: 25px;
+      margin: 0 0 23px;
+    }
+    .section-description {
+      line-height: 23px;
+      font-size: 16px;
+    }
+
+    .image-wrapper {
+      padding: 21px 0px 4px;
+      img {
+        margin-left: 0;
+      }
+      .desktop-image {
+        display: none;
+      }
+      .mobile-image {
+        display: block;
+        margin: 0 auto;
+      }
+    }
+  }
+}

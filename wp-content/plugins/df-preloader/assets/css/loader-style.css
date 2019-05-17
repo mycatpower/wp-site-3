@@ -1,0 +1,95 @@
+#df-page-loader {
+    position: fixed;
+    z-index: 99999;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    transition: all 800ms cubic-bezier(.540, .086, .000, .980);
+    background: #111;
+}
+    #df-page-loader.slideUp {
+        bottom: 0;
+    }
+        #df-page-loader.slideUp.hide-this {
+            bottom: 100%;
+        }
+        #df-page-loader.hide-this img {
+            opacity: 0;
+        }
+        #df-page-loader.hide-this .spinner-container .css-spinner {
+            opacity: 0;
+        }
+
+    #df-page-loader img {
+        margin: 0 auto;
+        margin-bottom: 24px;
+        transition: all .4s cubic-bezier(.19, 1, .22, 1);
+        opacity: 1;
+    }
+    #df-page-loader .spinner-container {
+        position: fixed;
+        z-index: 2000;
+        left: 50%;
+        -webkit-transform: translateX(-50%);
+        -ms-transform: translateX(-50%);
+        transform: translateX(-50%);
+    }
+    #df-page-loader .spinner-container .css-spinner {
+        display: block;
+        transition: all .4s cubic-bezier(.19, 1, .22, 1);
+        opacity: 1;
+    }
+        #df-page-loader .spinner-container .css-spinner.indicator-1 {
+            width: 34px;
+            height: 34px;
+            -webkit-animation: spinner 400ms linear infinite;
+            animation: spinner 400ms linear infinite;
+            border: solid 2px transparent;
+            border-top-color: #1fb8b2;
+            border-left-color: #1fb8b2;
+            border-radius: 100%;
+        }
+
+.container-mid {
+    position: absolute;
+    z-index: 2;
+    top: 50%;
+    left: 0;
+    display: block;
+    width: 100%;
+    padding: 0 30px;
+    height: auto;
+    max-height: 100%;
+    -webkit-transform: translateY(-50%);
+    transform: translateY(-50%);
+    text-align: center;
+}
+
+
+@-webkit-keyframes spinner
+{
+    0%
+    {
+        -webkit-transform: rotate(0deg);
+        transform: rotate(0deg);
+    }
+    100%
+    {
+        -webkit-transform: rotate(360deg);
+        transform: rotate(360deg);
+    }
+}
+
+@keyframes spinner
+{
+    0%
+    {
+        -webkit-transform: rotate(0deg);
+        transform: rotate(0deg);
+    }
+    100%
+    {
+        -webkit-transform: rotate(360deg);
+        transform: rotate(360deg);
+    }
+}

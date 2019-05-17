@@ -1,0 +1,197 @@
+.subscribe-section {
+  padding: 104px 0 130px;
+
+  .subscribe {
+    background-image: url(../images/subscribe_waves.png);
+    background-position: 100% 100%;
+    background-repeat: no-repeat;
+    background-color: #174D79;
+    background-size: cover;
+    border-radius: 8px;
+    padding: 70px 62px 77px 65px;
+
+    &__body {
+
+    }
+
+    &__title {
+      font-style: normal;
+      font-weight: bold;
+      line-height: 38px;
+      font-size: 28px;
+      color: #FFFFFF;
+    }
+
+    &__description {
+      font-family: Roboto, sans-serif;
+      font-style: normal;
+      font-weight: normal;
+      line-height: 23px;
+      font-size: 18px;
+      color: rgba(255, 255, 255, .8);
+    }
+
+    &__form {
+      .form-group {
+        margin: 0;
+        justify-content: flex-end;
+      }
+      .group-field {
+        position: relative;
+      }
+      input[type=email] {
+        background: #14446B;
+        border-radius: 4px;
+        color: #fff;
+        font-family: Roboto, sans-serif;
+        font-style: normal;
+        font-weight: normal;
+        line-height: normal;
+        font-size: 18px;
+      }
+      button[type=submit] {
+        padding: 17px 34px;
+        background: #FCEB46;
+        box-shadow: 0px 10px 18px rgba(66, 105, 244, 0.15);
+        border-top-right-radius: 4px !important;
+        border-bottom-right-radius: 4px !important;
+        color: #174D79;
+        font-style: normal;
+        font-weight: bold;
+        line-height: normal;
+        font-size: 18px;
+        text-align: center;
+      }
+      .checkbox {
+        position: absolute;
+        left: 0;
+        top: 70px;
+        color: #14446b;
+
+        &-wrap {
+          display: block;
+          position: relative;
+          padding-left: 30px;
+          margin-bottom: 0;
+          cursor: pointer;
+          user-select: none;
+
+          a {
+            color: #FCEB46;
+          }
+
+          &:hover input ~ .checkmark {
+            //background-color: #185281;
+          }
+
+          input {
+            position: absolute;
+            opacity: 0;
+            cursor: pointer;
+            height: 0;
+            width: 0;
+
+            &:checked ~ .checkmark {
+              //background-color: #14446b;
+            }
+            &:checked ~ .checkmark:after {
+              display: block;
+            }
+          }
+          .checkmark {
+            position: absolute;
+            top: 3px;
+            left: 1px;
+            height: 18px;
+            width: 18px;
+            border-radius: 2px;
+            background-color: #fff;
+            border: 1px solid #14446b;
+            transition: $transition;
+
+            &:after {
+              content: "";
+              position: absolute;
+              display: none;
+
+              left: 5px;
+              top: 2px;
+              width: 6px;
+              height: 10px;
+              border: solid #14446b;
+              border-width: 0 2px 2px 0;
+              -webkit-transform: rotate(45deg);
+              -ms-transform: rotate(45deg);
+              transform: rotate(45deg);
+
+            }
+          }
+        }
+
+      }
+
+      .error {
+        position: absolute;
+        top: -25px;
+        left: 0;
+        color: #fff;
+        text-transform: uppercase;
+        font-size: 12px;
+      }
+    }
+  }
+
+  @media (max-width: 992px) {
+    padding: 55px 0;
+    background-color: #004D7B;
+    background-image: url(../images/subscribe_waves.png);
+    background-position: 40% 100%;
+    background-repeat: no-repeat;
+
+    .subscribe {
+      background-image: none;
+      padding: 10px 0 45px;
+      background-color: transparent;
+
+      &__body {
+        padding: 0 30px;
+      }
+      &__title {
+        line-height: normal;
+        font-size: 22px;
+        text-align: center;
+        margin: 0 0 11px;
+      }
+      &__description {
+        line-height: 21px;
+        font-size: 16px;
+        text-align: center;
+      }
+
+      &__form {
+        padding: 23px 0 0;
+
+        .form-group {
+          justify-content: center;
+        }
+        
+        .checkbox {
+          top: 52px;
+          color: #fff;
+        }
+
+        input[type=email] {
+          line-height: normal;
+          font-size: 14px;
+        }
+        button[type=submit] {
+          line-height: normal;
+          font-size: 14px;
+          padding: 8px 20px;
+        }
+      }
+    }
+  }
+  @include mobile {
+  }
+}

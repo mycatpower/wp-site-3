@@ -1,0 +1,33 @@
+.error404 {
+  #menu-header,
+  #menu-footer,
+  .navbar-toggler {
+    display: none;
+  }
+}
+.section-single {
+  display: flex;
+  align-items: center;
+  padding: 120px 0 200px;
+  background-color: #174D79;
+  min-height: calc(100vh - 247px);
+  background-image: url(../images/block-wave.png);
+  background-position: 50% 100%;
+  background-size: contain;
+  background-repeat: no-repeat;
+
+  .section-title {
+    font-style: normal;
+    font-weight: bold;
+    line-height: 38px;
+    font-size: 28px;
+    text-align: center;
+    color: #fff;
+    margin-bottom: 10px;
+  }
+  p {
+    color: #fff;
+    text-align: center;
+    font-size: 18px;
+  }
+}

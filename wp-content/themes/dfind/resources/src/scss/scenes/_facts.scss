@@ -1,0 +1,218 @@
+.facts-section {
+  padding: 100px 0 100px;
+  overflow: hidden;
+  position: relative;
+
+  .section-nav {
+    padding: 50px 0 119px;
+  }
+
+  // Flag links
+  .icon-block {
+    padding: 10px 0 0 79px;
+    position: relative;
+    margin: 0 0 30px;
+
+    &__icon {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      position: absolute;
+      top: 0;
+      left: 0;
+      background-color: rgba(15, 182, 204, 0.15);
+      width: 70px;
+      height: 70px;
+      border-radius: 50%;
+      color: #0FB6CC;
+
+      i {
+        font-size: 37px;
+      }
+    }
+
+    &__title {
+      margin: 0 0 10px;
+      font-weight: 600;
+      line-height: 25px;
+      font-size: 20px;
+      text-transform: uppercase;
+      transition: $transition;
+
+      a {
+        color: #131436;
+
+        &:hover {
+          text-decoration: none;
+          color: #007490;
+        }
+      }
+    }
+
+    &__links {
+      .link-item {
+        position: relative;
+        font-family: Roboto, sans-serif;
+        font-style: normal;
+        font-weight: normal;
+        line-height: 23px;
+        font-size: 13px;
+        color: #007490;
+        padding-right: 3px;
+        margin-right: 5px;
+
+        &:after {
+          content: '';
+          display: inline-block;
+          height: 15px;
+          width: 1px;
+          background-color: rgba(197, 201, 227, .5);
+          position: absolute;
+          top: 2px;
+          right: 0;
+        }
+
+        &:last-child:after {
+          content: none;
+        }
+
+        i {
+          font-size: 12px;
+        }
+      }
+    }
+  }
+
+  // Counters
+  .section-subtitle {
+    font-style: normal;
+    font-weight: 300;
+    line-height: 46px;
+    font-size: 34px;
+    margin: 0 0 70px;
+  }
+
+  .counters {
+    max-width: 950px;
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0 auto 30px;
+
+    .fact {
+      width: 25%;
+      padding: 35px 20px;
+      border-right: 1px solid rgba(197, 201, 227, .5);
+
+      &:last-child {
+        border-right: none;
+      }
+
+      &-icon {
+        font-size: 35px;
+        color: #50C6D2;
+        text-align: center;
+        margin: 0 0 7px;
+      }
+
+      &-number {
+        font-style: normal;
+        font-weight: 500;
+        line-height: normal;
+        font-size: 35px;
+        text-align: center;
+        color: #007490;
+        margin: 0 0 8px;
+      }
+
+      &-title {
+        font-family: Roboto, sans-serif;
+        font-style: normal;
+        font-weight: normal;
+        line-height: 23px;
+        font-size: 16px;
+        text-align: center;
+        color: #323341;
+      }
+    }
+  }
+
+  @media (max-width: 992px) {
+    .icon-block-wrap {
+      text-align: center;
+    }
+    .icon-block {
+      display: inline-block;
+      width: 60%;
+    }
+  }
+
+  @include tablet {
+    .icon-block {
+      width: 100%;
+    }
+    .counters {
+      .fact {
+        width: 50%;
+        border: none;
+      }
+    }
+  }
+
+  @include mobile {
+    padding: 150px 0 100px;
+
+    .section-nav {
+      padding: 5px 0 57px;
+    }
+    .icon-block {
+      padding: 10px 5px 2px 81px;
+      margin: 0 auto 27px;
+      text-align: left;
+      width: 285px;
+
+      &__icon {
+        width: 60px;
+        height: 60px;
+      }
+      &__title {
+        font-weight: 600;
+        line-height: 21px;
+        font-size: 18px;
+        margin: 0 0 6px;
+      }
+      &__links {
+        .link-item {
+          line-height: 20px;
+          font-size: 14px;
+        }
+      }
+    }
+    .section-subtitle {
+      line-height: 35px;
+      font-size: 26px;
+      margin: 0 0 10px;
+    }
+    .counters {
+      margin: 0;
+      .fact {
+        padding: 20px 20px 10px;
+        &-icon {
+          font-size: 35px;
+          margin: 0 0 3px;
+        }
+        &-number {
+          font-size: 26px;
+          margin: 0 0 4px;
+        }
+        &-title {
+          line-height: 20px;
+          font-size: 14px;
+        }
+      }
+    }
+
+    .wave-animation {
+      height: 100px;
+    }
+  }
+}

@@ -1,0 +1,69 @@
+.what-you-find-section {
+  background-color: #F5F6FB;
+  padding: 127px 0 50px;
+
+  .section-title {
+    font-style: normal;
+    font-weight: bold;
+    line-height: 56px;
+    font-size: 48px;
+    text-align: center;
+    margin: 0 0 60px;
+  }
+  .section-subtitle {
+    position: relative;
+    font-style: normal;
+    font-weight: 300;
+    line-height: 46px;
+    font-size: 34px;
+    text-align: center;
+    color: #174D79;
+    margin: 0 0 60px;
+
+    &:after {
+      content: '';
+      display: block;
+      position: absolute;
+      bottom: -30px;
+      left: 50%;
+      background-color: #50C6D2;
+      width: 28px;
+      height: 3px;
+      margin-right: -14px;
+    }
+  }
+
+  .section-description {
+    font-style: normal;
+    font-weight: normal;
+    line-height: 43px;
+    font-size: 28px;
+    color: #323341;
+
+    span {
+      font-weight: bold;
+      color: #174D79;
+    }
+  }
+
+  @include mobile {
+    padding: 25px 0;
+
+    .section-title {
+      line-height: 39px;
+      font-size: 34px;
+      margin: 0 0 23px;
+    }
+    .section-subtitle {
+      line-height: normal;
+      font-size: 25px;
+      margin: 0 0 46px;
+    }
+
+    .section-description {
+      line-height: 27px;
+      font-size: 18px;
+    }
+  }
+
+}

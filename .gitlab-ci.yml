@@ -1,0 +1,5 @@
+mlanding_deploy:
+    script:
+        - cd /var/www/projects/dfind.dev-amgrade.com && sudo -u www-data -H git pull
+    only:
+        - develop

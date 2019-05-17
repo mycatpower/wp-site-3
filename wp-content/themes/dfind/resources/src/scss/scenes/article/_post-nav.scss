@@ -1,0 +1,128 @@
+.post-nav {
+  display: flex;
+  width: 100%;
+
+  &__btn {
+    width: 50%;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    min-height: 215px;
+    text-align: center;
+    flex-grow: 1;
+    border-radius: 0;
+    transition: all 0.3s;
+    font-size: 36px;
+    font-weight: 500;
+    color: #fff;
+    border: 0;
+    background: {
+      position: center center;
+      size: cover;
+      repeat: no-repeat;
+    };
+
+    @include media-breakpoint-down(sm) {
+      min-height: 150px;
+    }
+
+    &:hover {
+      text-decoration: none;
+
+      &:before {
+        opacity: 0.8;
+      }
+    }
+
+    &.prev {
+      align-items: flex-start;
+      padding-right: 15px;
+      padding-left: calc( 25vw - 5vw);
+      @media screen and (max-width: 1600px) {
+        padding-left: calc( 25vw - 10vw);
+      }
+
+      @media screen and (max-width: 1400px) {
+        padding-left: calc( 25vw - 15vw);
+      }
+
+      @media screen and (max-width: 1300px) {
+        padding-left: calc( 25vw - 20vw);
+      }
+
+      @include media-breakpoint-down(md) {
+        padding-left: 15px;
+      }
+    }
+
+    &.next {
+      align-items: flex-end;
+      padding-right: calc( 25vw - 5vw);
+      padding-left: 15px;
+      @media screen and (max-width: 1600px) {
+        padding-right: calc( 25vw - 10vw);
+      }
+
+      @media screen and (max-width: 1400px) {
+        padding-right: calc( 25vw - 15vw);
+      }
+
+      @media screen and (max-width: 1300px) {
+        padding-right: calc( 25vw - 20vw);
+      }
+
+      @include media-breakpoint-down(md) {
+        padding-right: 15px;
+      }
+
+      .post-nav__title {
+        text-align: right;
+      }
+    }
+
+    &:before {
+      content: '';
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background: rgba(0,77,123, 0.6);
+      transition: $transition;
+    }
+  }
+
+  &__text {
+    position: relative;
+    z-index: 3;
+    line-height: 21px;
+    font-size: 16px;
+    text-transform: uppercase;
+    color: $white;
+    opacity: 0.8;
+  }
+
+  &__title {
+    position: relative;
+    z-index: 3;
+    font-style: normal;
+    font-weight: bold;
+    line-height: 38px;
+    font-size: 28px;
+    color: $white;
+    text-align: left;
+
+    @include media-breakpoint-down(md) {
+      line-height: 24px;
+      font-size: 20px;
+    }
+
+    @include media-breakpoint-down(sm) {
+      font-size: 18px;
+      max-height: 47px;
+      overflow: hidden;
+    }
+  }
+}

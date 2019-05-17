@@ -1,0 +1,146 @@
+
+.grcs_background_content
+{
+    position: fixed;
+    z-index: -10;
+    overflow: hidden;
+    width: 100%;
+    height: 100%;
+}
+
+.grcs_background_content .level-1,
+.grcs_background_content .level-2
+{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+}
+
+.grcs_background_content .level-1
+{
+    top: 50%;
+    left: 50%;
+
+    z-index: 2;
+    width: 110%;
+    height: 110%;
+    -webkit-transform: translate(-50%,-50%);
+            transform: translate(-50%,-50%);
+}
+
+.grcs_background_content .level-2
+{
+    z-index: 1;
+    -webkit-transform: scale(1.02);
+            transform: scale(1.02);
+}
+
+.grcs_background_content .bg-overlay,
+.grcs_background_content .bg-pattern,
+.grcs_background_content .bg-image,
+.grcs_background_content .bg-video,
+.grcs_background_content .bg-color,
+.grcs_background_content .glitch-img,
+.grcs_background_content #canvas
+{
+    position: absolute !important;
+    width: 100%;
+    height: 100% !important;
+}
+
+.grcs_background_content .glitch-img
+{
+	background-size: cover;
+}
+
+.grcs_background_content .bg-color
+{
+    z-index: -1;
+    background: rgb(175,153,127);
+    opacity: 0;
+}
+
+.grcs_background_content #canvas canvas
+{
+    position: absolute !important;
+    width: 100%;
+    height: 100%;
+}
+
+.grcs_background_content #canvas
+{
+    top: 100% !important;
+    -webkit-transition: all 800ms ease;
+            transition: all 800ms ease;
+}
+
+.grcs_background_content #canvas.init
+{
+    top: 0 !important;
+}
+
+.grcs_background_content .bg-overlay
+{
+    position: absolute !important;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0,0,0,1.00);
+    opacity: .52;
+}
+
+.grcs_background_content .bg-pattern
+{
+    background: url(../images/pattern.png);
+    background-repeat: repeat;
+
+    opacity: .5;
+}
+
+
+.grcs_youtube_controls
+{
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    z-index: 90;
+
+}
+
+.grcs_youtube_controls .volume-button,
+.grcs_youtube_controls .pause-button
+{
+    font-size: 20px;
+
+    position: absolute;
+    z-index: 101;
+    bottom: -50px;
+
+    width: 20px;
+
+    cursor: pointer;
+
+    color: #fff;
+
+    -webkit-transition: 200ms ease;
+            transition: 200ms ease;
+}
+
+.grcs_youtube_controls.show .volume-button,
+.grcs_youtube_controls.show .pause-button
+{
+    bottom: 22px;
+
+    -webkit-transition: 800ms ease;
+            transition: 800ms ease;
+}
+
+.grcs_youtube_controls .volume-button
+{
+    left: 66px;
+}
+
+.grcs_youtube_controls .pause-button
+{
+    left: 26px;
+}

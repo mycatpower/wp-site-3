@@ -1,0 +1,132 @@
+.digital-section {
+  padding: 111px 0 125px;
+  background-color: #F5F6FB;
+
+  .section-title {
+    font-style: normal;
+    font-weight: bold;
+    line-height: 51px;
+    font-size: 38px;
+    text-align: center;
+    color: #174D79;
+    margin: 0 0 30px;
+  }
+
+  .block-content {
+    max-width: 840px;
+    margin:  0 auto;
+    display: flex;
+    justify-content: space-between;
+
+    .block {
+      position: relative;
+      padding-left: 45px;
+      width: calc(50% - 15px);
+
+      &__title {
+        font-family: Roboto, sans-serif;
+        font-style: normal;
+        font-weight: bold;
+        line-height: 20px;
+        font-size: 18px;
+        text-transform: uppercase;
+        color: #50C6D2;
+        margin: 0 0 20px;
+
+        &:before {
+          content: '';
+          display: inline-block;
+          width: 28px;
+          height: 3px;
+          position: absolute;
+          left: 0;
+          top: 8px;
+          background: #50C6D2;
+        }
+      }
+      &__text {
+        font-family: Roboto, sans-serif;
+        font-style: normal;
+        font-weight: normal;
+        line-height: 23px;
+        font-size: 16px;
+        color: #131436;
+      }
+    }
+  }
+
+  .section-subtitle {
+    position: relative;
+    font-style: normal;
+    font-size: 44px;
+    text-align: center;
+    color: #174D79;
+    margin: 100px 0 5px;
+    font-weight: 300;
+    line-height: 46px;
+    font-size: 34px;
+
+    &:before {
+      content: '';
+      width: 28px;
+      height: 3px;
+      background: #FFED00;
+      position: absolute;
+      top: -50px;
+      left: 50%;
+      margin-right: -14px;
+    }
+  }
+  .section-description {
+    max-width: 700px;
+    margin: 0 auto;
+    font-family: Roboto, sans-serif;
+    font-style: normal;
+    font-weight: normal;
+    line-height: 23px;
+    font-size: 18px;
+    text-align: center;
+    color: #323341;
+  }
+
+  @include mobile {
+    padding: 20px 0 40px;
+
+    .section-title {
+      line-height: normal;
+      font-size: 30px;
+      text-align: left;
+      padding-left: 45px;
+    }
+    .block-content {
+      flex-wrap: wrap;
+
+      .block {
+        width: 100%;
+        margin: 0 0 28px;
+
+        &__title {
+          line-height: 18px;
+          font-size: 16px;
+          margin: 0 0 5px;
+        }
+        &__text {
+          line-height: 20px;
+          font-size: 14px;
+        }
+      }
+    }
+
+    .section-subtitle {
+      line-height: 43px;
+      font-size: 32px;
+      margin: 59px 0 17px;
+    }
+
+    .section-description {
+      line-height: 18px;
+      font-size: 14px;
+      text-align: center;
+    }
+  }
+}

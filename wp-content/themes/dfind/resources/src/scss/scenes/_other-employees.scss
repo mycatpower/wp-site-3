@@ -1,0 +1,462 @@
+.other-employees-section {
+  padding: 76px 0 250px;
+  position: relative;
+
+  .section-title {
+    font-style: normal;
+    font-weight: 300;
+    line-height: 46px;
+    font-size: 34px;
+    text-align: center;
+    color: #174D79;
+    margin: 0 0 15px;
+  }
+
+  .section-description {
+    max-width: 710px;
+    margin: 0 auto;
+    font-family: Roboto, sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 26px;
+    font-size: 18px;
+    text-align: center;
+    color: #323341;
+  }
+
+  // Team board
+  .section-board {
+    padding: 100px 0 0;
+    
+    .board-wrapper {
+      background-image: url(../images/lines.png);
+      background-position: 50% 6px;
+      background-repeat: no-repeat;
+    }
+
+    @include desktop {
+      padding: 6px 0 25px;
+
+      .board-wrapper {
+        background-position: 50% 220px;
+        background-size: 800px;
+      }
+    }
+  }
+  .team-board {
+    position: relative;
+    padding: 107px 0 0;
+    z-index: 5;
+
+    &__logo-wrap {
+      position: absolute;
+      top: 107px;
+      left: calc(50% - 75px);
+      z-index: 10;
+    }
+    &__logo {
+      display: flex;
+      width: 150px;
+      height: 150px;
+      border-radius: 50%;
+      //margin: 0 auto 30px;
+      justify-content: center;
+      align-items: center;
+      background: #004D7B;
+      box-shadow: 0px 6px 16px rgba(0, 78, 123, 0.18);
+      animation: pulse 2s infinite;
+
+      img {
+        animation: logo-pulse 2s infinite;
+      }
+    }
+
+    &__title {
+      font-style: normal;
+      font-weight: bold;
+      line-height: 42px;
+      font-size: 28px;
+      text-align: center;
+      color: #174D79;
+      margin: 180px 0 3px;
+    }
+
+    &__description {
+      max-width: 400px;
+      font-family: Roboto, sans-serif;
+      font-style: normal;
+      font-weight: normal;
+      line-height: 26px;
+      font-size: 18px;
+      text-align: center;
+      margin: 0 auto;
+      color: #323341;
+    }
+
+    &__teammates {
+
+      .line {
+        position: absolute;
+        left: 50%;
+        top: 50%;
+        width: 100px;
+        height: 1px;
+        background-color: #007490;
+        transform-origin: left center;
+        z-index: 1;
+        transition: all .1s;
+      }
+
+      .teammate {
+        position: absolute;
+
+        img {
+          border-radius: 50%;
+          position: relative;
+          z-index: 2;
+
+          &:not(:disabled):not(.disabled) {
+            cursor: pointer;
+          }
+
+          &:hover {
+            box-shadow: 0 0 0 3px rgba(80, 198, 210, 0.8);
+          }
+        }
+
+        &__card {
+          display: none;
+        }
+      }
+
+      .teammate-1 {
+        top: 117px;
+        left: 308px;
+
+        img {
+          width: 80px;
+          height: 80px;
+        }
+      }
+      .teammate-2 {
+        top: 109px;
+        right: 317px;
+
+        img {
+          width: 60px;
+          height: 60px;
+        }
+      }
+      .teammate-3 {
+        top: 154px;
+        left: 67px;
+
+        img {
+          width: 100px;
+          height: 100px;
+        }
+      }
+      .teammate-4 {
+        top: 174px;
+        right: 168px;
+
+        img {
+          width: 80px;
+          height: 80px;
+        }
+      }
+      .teammate-5 {
+        top: 282px;
+        left: 215px;
+
+        img {
+          width: 60px;
+          height: 60px;
+        }
+      }
+      .teammate-6 {
+        top: 120px;
+        right: 9px;
+
+        img {
+          width: 100px;
+          height: 100px;
+        }
+      }
+      .teammate-7 {
+        top: 476px;
+        left: 288px;
+
+        img {
+          width: 80px;
+          height: 80px;
+        }
+      }
+      .teammate-8 {
+        top: 402px;
+        right: 222px;
+
+        img {
+          width: 100px;
+          height: 100px;
+        }
+      }
+
+      .teammate-9 {
+        top: 339px;
+        left: 69px;
+
+        img {
+          width: 80px;
+          height: 80px;
+        }
+      }
+
+      .teammate-10 {
+        top: 279px;
+        right: 17px;
+
+        img {
+          width: 80px;
+          height: 80px;
+        }
+      }
+
+      .teammate-11 {
+        top: 442px;
+        left: 175px;
+
+        img {
+          width: 60px;
+          height: 60px;
+        }
+      }
+
+      .teammate-12 {
+        top: 398px;
+        right: 62px;
+
+        img {
+          width: 60px;
+          height: 60px;
+        }
+      }
+
+      .teammate-13 {
+        top: 528px;
+        left: 93px;
+
+        img {
+          width: 80px;
+          height: 80px;
+        }
+      }
+
+      .teammate-14 {
+        top: 498px;
+        right: 108px;
+
+        img {
+          width: 80px;
+          height: 80px;
+        }
+      }
+
+      .teammate-15 {
+        top: 495px;
+        left: 432px;
+
+        img {
+          width: 100px;
+          height: 100px;
+        }
+      }
+
+      .teammate-16 {
+        top: 487px;
+        right: 395px;
+
+        img {
+          width: 60px;
+          height: 60px;
+        }
+      }
+
+      .teammate-17 {
+        top: 579px;
+        left: 240px;
+
+        img {
+          width: 80px;
+          height: 80px;
+        }
+      }
+
+      .teammate-18 {
+        top: 560px;
+        right: 222px;
+
+        img {
+          width: 70px;
+          height: 70px;
+        }
+      }
+
+      .teammate-19 {
+        top: 553px;
+        left: 579px;
+
+        img {
+          width: 90px;
+          height: 90px;
+        }
+      }
+
+      .teammate-20 {
+        top: 552px;
+        right: 3px;
+
+        img {
+          width: 60px;
+          height: 60px;
+        }
+      }
+    }
+
+    @include desktop-l {
+      &__teammates {
+        .teammate-7 {
+          .line[data-to=teammate-1] {
+            display: none;
+          }
+        }
+        .teammate-8 {
+          .line[data-to=teammate-2] {
+            display: none;
+          }
+        }
+        .teammate-15 {
+          left: 405px;
+        }
+        .teammate-16 {
+          right: 328px;
+        }
+      }
+    }
+
+    @include desktop {
+      padding: 20px 0 0;
+
+      &__title {
+        margin: 26px 0 5px;
+      }
+
+      &__logo-wrap {
+        display: none;
+      }
+
+      &__teammates {
+        display: flex;
+        flex-wrap: wrap;
+        margin: 130px 0 0;
+
+        .line {
+          display: none;
+        }
+        .teammate {
+          position: static;
+          flex: 0 0 50%;
+          text-align: center;
+          margin: 0 0 20px;
+
+          img {
+            width: 100px;
+            height: 100px;
+            margin: 0 0 5px;
+
+            &:hover {
+              box-shadow: none;
+            }
+          }
+
+          &__card {
+            display: block;
+
+            &-name {
+              color: #50C6D2;
+              font-style: normal;
+              font-weight: 600;
+              line-height: 27px;
+              font-size: 16px;
+            }
+            &-position {
+              font-family: Roboto, sans-serif;
+              font-style: normal;
+              font-weight: normal;
+              line-height: 20px;
+              font-size: 12px;
+              color: #818182;
+              text-transform: uppercase;
+            }
+          }
+        }
+      }
+
+    }
+  }
+
+
+  @include mobile {
+    padding: 60px 0 0;
+
+    .section-title {
+      line-height: 35px;
+      font-size: 26px;
+    }
+
+    .section-description {
+      line-height: 20px;
+      font-size: 14px;
+    }
+
+    .team-board {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+
+      &__title {
+        line-height: 36px;
+        font-size: 24px;
+      }
+
+      &__description {
+        line-height: 23px;
+        font-size: 16px;
+        margin: 0 0 10px;
+      }
+
+      &__logo-wrap {
+        position: relative;
+        left: auto;
+        top: auto;
+        width: 100%;
+        padding: 168px 0 75px;
+      }
+
+      &__logo {
+        margin: 0 auto;
+        height: 90px;
+        width: 90px;
+
+        img {
+          width: 42px;
+          height: auto;
+        }
+      }
+    }
+
+    .wave-animation {
+      height: 100px;
+    }
+  }
+}

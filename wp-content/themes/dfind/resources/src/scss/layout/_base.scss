@@ -1,0 +1,50 @@
+html.ie {
+  #ie7lower {
+    display: block;
+  }
+  .page-wrapper {
+    display: none;
+  }
+}
+body {
+  font-family: $main_ff;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+  font-size: 14px;
+}
+
+p,
+ul li {
+  font-size: 18px;
+  font-family: $text-font;
+  line-height: 27px;
+  font-style: normal;
+  font-weight: normal;
+}
+.page-wrapper {
+  overflow: hidden;
+}
+#ie7lower {
+  display: none;
+}
+
+.container-small {
+  @include media-breakpoint-up(md) {
+    width: 950px;
+  }
+  margin: auto;
+}
+
+::-webkit-input-placeholder { /* Chrome/Opera/Safari */
+  color: rgba(#fff, 0.5);
+}
+::-moz-placeholder { /* Firefox 19+ */
+  color: rgba(#fff, 0.5);
+}
+:-ms-input-placeholder { /* IE 10+ */
+  color: rgba(#fff, 0.5);
+}
+:-moz-placeholder { /* Firefox 18- */
+  color: rgba(#fff, 0.5);
+}

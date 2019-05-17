@@ -1,0 +1,37 @@
+.heading-single {
+  width: 100%;
+  padding-top: 130px;
+  background: {
+    image:url("../images/bg-simple.png");
+    position: center center;
+    repeat: no-repeat;
+    size: cover;
+  };
+
+  @include media-breakpoint-down(md) {
+    padding-top: 70px;
+  }
+
+  @include media-breakpoint-down(sm) {
+    padding-top: 50px;
+  }
+
+  .blog-item-slider {
+
+    &__title {
+      color: $header-text;
+    }
+
+    &__info {
+      color: $text;
+      opacity: 0.8;
+    }
+
+    &__social {
+      a {
+        color: $turquoise;
+        border-color: $turquoise;
+      }
+    }
+  }
+}

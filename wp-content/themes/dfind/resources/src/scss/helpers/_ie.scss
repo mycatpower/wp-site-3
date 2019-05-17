@@ -1,0 +1,35 @@
+html.ie9,
+html.ie8 {
+  #ie7lower {
+    display: block;
+  }
+  .page-wrapper {
+    display: none;
+  }
+}
+
+@media screen and (-ms-high-contrast: active), (-ms-high-contrast: none) {
+  // Team card
+  body {
+    .our-team-section {
+      .team-slider {
+        .team-card {
+          &__front {
+            transition: all 0.7s;
+            .team-card__content {
+              //height: 235px;
+            }
+          }
+          &__back {
+            transition: all 0.7s;
+            .team-card__content {
+              //height: 310px;
+            }
+          }
+        }
+
+      }
+    }
+  }
+
+}

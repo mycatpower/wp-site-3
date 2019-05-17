@@ -1,0 +1,52 @@
+.author {
+  &__avatar {
+    position: relative;
+    z-index: 2;
+    width: 88px;
+    height: 88px;
+    border-radius: 50%;
+    overflow: hidden;
+    padding: 3px;
+    margin: -44px 0 10px 0;
+    background: $white;
+
+    &--img {
+      display: block;
+      width: 100%;
+      border-radius: 50%;
+    }
+  }
+
+  &__info {
+    display: flex;
+    align-items: center;
+  }
+
+  &__item {
+    margin-left: 35px;
+    display: flex;
+    color: $turquoise;
+    font-weight: 100;
+
+    &--icon {
+      margin-right: 10px;
+    }
+
+    &:first-child {
+      margin-left: 0;
+    }
+  }
+
+  &__name {
+    line-height: 31px;
+    font-size: 18px;
+    color: $text;
+    font-weight: normal;
+
+    &--mark {
+      color: $turquoise;
+      font-weight: 500;
+      margin-left: 5px;
+    }
+  }
+}

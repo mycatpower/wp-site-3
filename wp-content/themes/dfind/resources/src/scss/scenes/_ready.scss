@@ -1,0 +1,109 @@
+.ready-section {
+  padding: 80px 0 150px;
+  background-color: #174D79;
+  position: relative;
+  background-image: url(../images/block-wave.png);
+  background-position: 50% 100%;
+  background-size: 100% auto;
+  background-repeat: no-repeat;
+
+  &.ready-cover {
+    background-size: cover;
+    padding: 120px 0 150px;
+  }
+
+  .section-content {
+    position: relative;
+    z-index: 5;
+  }
+
+  .bubbles {
+    margin: 0 0 48px;
+  }
+  .ready-block {
+    &__title {
+      font-style: normal;
+      font-weight: bold;
+      line-height: 38px;
+      font-size: 28px;
+      text-align: center;
+      color: #fff;
+      margin-bottom: 10px;
+    }
+    &__description {
+      font-family: Roboto, sans-serif;
+      font-style: normal;
+      font-weight: normal;
+      line-height: 25px;
+      font-size: 18px;
+      text-align: center;
+      color: #fff;
+      max-width: 495px;
+      margin: 0 auto 10px;
+    }
+    &__link {
+      display: inline-block;
+      background-color: #fff;
+      padding: 18px 50px 22px;
+      font-style: normal;
+      font-weight: bold;
+      line-height: normal;
+      font-size: 24px;
+      text-align: center;
+      color: #004D7B;
+      border-radius: 4px;
+      margin: 56px 0 0;
+      transition: $transition;
+      
+      &:hover {
+        background-color: #50C6D2;
+        color: #fff;
+        text-decoration: none;
+      }
+
+      i {
+        position: relative;
+        top: 3px;
+        right: -8px;
+      }
+    }
+  }
+
+  .wave-wrapper {
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: 1;
+  }
+
+  @include mobile {
+    padding: 55px 0 50px;
+
+    .bubbles {
+      img {
+        width: 70px;
+      }
+      margin-bottom: 44px;
+    }
+
+    .ready-block {
+      &__title {
+        line-height: normal;
+        font-size: 24px;
+      }
+
+      &__description {
+        line-height: 23px;
+        font-size: 16px;
+        margin: 0 0 20px;
+      }
+      &__link {
+        font-size: 20px;
+        margin: 38px 0 0;
+        padding: 19px 20px 17px;
+        width: 100%;
+      }
+    }
+  }
+}

@@ -1,0 +1,46 @@
+.page-template-default:not(.home) {
+  #menu-header,
+  #menu-footer,
+  .navbar-toggler {
+    display: none;
+  }
+
+  .section-heading {
+    padding: 120px 0 200px;
+    background-color: #174D79;
+    background-image: url(../images/block-wave.png);
+    background-position: 50% 100%;
+    background-size: cover;
+    background-repeat: no-repeat;
+
+    .section-title {
+      font-style: normal;
+      font-weight: bold;
+      line-height: 38px;
+      font-size: 43px;
+      text-align: center;
+      color: #fff;
+      margin-bottom: 10px;
+    }
+
+    @include mobile {
+      padding: 50px 0 80px;
+    }
+  }
+
+  .section-content {
+    padding: 50px 0;
+    font-family: Roboto, sans-serif;
+    font-style: normal;
+    font-weight: normal;
+    line-height: 26px;
+    font-size: 18px;
+    margin: 0 auto 10px;
+    color: #131436;
+
+    @include mobile {
+      line-height: 23px;
+      font-size: 16px;
+    }
+  }
+}

@@ -1,0 +1,174 @@
+@import "variables";
+
+@font-face {
+  font-family: '#{$icomoon-font-family}';
+  src:  url('#{$icomoon-font-path}/#{$icomoon-font-family}.eot?gxkoxn');
+  src:  url('#{$icomoon-font-path}/#{$icomoon-font-family}.eot?gxkoxn#iefix') format('embedded-opentype'),
+    url('#{$icomoon-font-path}/#{$icomoon-font-family}.ttf?gxkoxn') format('truetype'),
+    url('#{$icomoon-font-path}/#{$icomoon-font-family}.woff?gxkoxn') format('woff'),
+    url('#{$icomoon-font-path}/#{$icomoon-font-family}.svg?gxkoxn##{$icomoon-font-family}') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+
+.df {
+  /* use !important to prevent issues with browser extensions that change fonts */
+  font-family: '#{$icomoon-font-family}' !important;
+  speak: none;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+
+  /* Better Font Rendering =========== */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.df-building .path1 {
+  &:before {
+    content: $df-building-path1;
+  }
+}
+.df-building .path2 {
+  &:before {
+    content: $df-building-path2;
+    margin-left: -1em;
+  }
+}
+.df-building .path3 {
+  &:before {
+    content: $df-building-path3;
+    margin-left: -1em;
+  }
+}
+.df-building .path4 {
+  &:before {
+    content: $df-building-path4;
+    margin-left: -1em;
+  }
+}
+.df-building .path5 {
+  &:before {
+    content: $df-building-path5;
+    margin-left: -1em;
+  }
+}
+.df-building .path6 {
+  &:before {
+    content: $df-building-path6;
+    margin-left: -1em;
+  }
+}
+.df-tennis {
+  &:before {
+    content: $df-tennis; 
+  }
+}
+.df-experience {
+  &:before {
+    content: $df-experience; 
+  }
+}
+.df-interview {
+  &:before {
+    content: $df-interview; 
+  }
+}
+.df-linkedin {
+  &:before {
+    content: $df-linkedin; 
+  }
+}
+.df-twitter1 {
+  &:before {
+    content: $df-twitter1; 
+  }
+}
+.df-facebook1 {
+  &:before {
+    content: $df-facebook1; 
+  }
+}
+.df-mail {
+  &:before {
+    content: $df-mail; 
+  }
+}
+.df-location {
+  &:before {
+    content: $df-location; 
+  }
+}
+.df-angle-left {
+  &:before {
+    content: $df-angle-left; 
+  }
+}
+.df-angle-right {
+  &:before {
+    content: $df-angle-right; 
+  }
+}
+.df-arrow-small {
+  &:before {
+    content: $df-arrow-small; 
+  }
+}
+.df-arrow-down {
+  &:before {
+    content: $df-arrow-down; 
+  }
+}
+.df-arrow-right {
+  &:before {
+    content: $df-arrow-right; 
+  }
+}
+.df-event_icon {
+  &:before {
+    content: $df-event_icon; 
+  }
+}
+.df-visitor_icon {
+  &:before {
+    content: $df-visitor_icon; 
+  }
+}
+.df-job-search_icon {
+  &:before {
+    content: $df-job-search_icon; 
+  }
+}
+.df-team_icon {
+  &:before {
+    content: $df-team_icon; 
+  }
+}
+.df-work_icon {
+  &:before {
+    content: $df-work_icon; 
+  }
+}
+.df-facebook {
+  &:before {
+    content: $df-facebook; 
+  }
+}
+.df-twitter {
+  &:before {
+    content: $df-twitter; 
+  }
+}
+.df-linkedin2 {
+  &:before {
+    content: $df-linkedin2; 
+  }
+}
+.df-xing2 {
+  &:before {
+    content: $df-xing2; 
+  }
+}
+
